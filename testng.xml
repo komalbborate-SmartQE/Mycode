@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Smoke Suite">
+
+    <test name="Smoke Tests">
+
+        <classes>
+
+            <class name="tests.Login"/>
+            <class name="tests.Logout"/>
+            <class name="tests.Title"/>
+            <class name="tests.GoogleSearch"/>
+            <class name="tests.SwagLab_Login"/>
+
+        </classes>
+
+    </test>
+
+</suite>
