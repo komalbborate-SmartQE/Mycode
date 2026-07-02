@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Smoke_Suite" class="navigator-link">
-              <span class="suite-name border-failed">Smoke Suite</span>
+              <span class="suite-name border-passed">Smoke Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Smoke_Suite" class="hide-methods failed suite-Smoke_Suite"> (hide)</a> <!-- hide-methods failed suite-Smoke_Suite -->
-                      <a href="#" panel-name="suite-Smoke_Suite" class="show-methods failed suite-Smoke_Suite"> (show)</a> <!-- show-methods failed suite-Smoke_Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Smoke_Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Smoke_Suite" title="tests.Logout" class="method navigator-link" hash-for-method="Logout">Logout</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Smoke_Suite -->
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -123,6 +109,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Smoke_Suite" title="tests.Login" class="method navigator-link" hash-for-method="Login">Login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Smoke_Suite" title="tests.Logout" class="method navigator-link" hash-for-method="Logout">Logout</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -147,9 +138,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Smoke_Suite" class="panel Smoke_Suite">
-          <div class="suite-Smoke_Suite-class-failed">
+          <div class="suite-Smoke_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">tests.Logout</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -158,21 +149,10 @@
                   <a name="Logout">
                   </a> <!-- Logout -->
                   <span class="method-name">Logout</span>
-                  <div class="stack-trace">org.openqa.selenium.InvalidSelectorException: Compound class names not permitted
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
-Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.By$ByClassName.&lt;init&gt;(By.java:309)
-	at org.openqa.selenium.By.className(By.java:100)
-	at tests.Logout.Logout(Logout.java:27)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Smoke_Suite-class-failed -->
+          </div> <!-- suite-Smoke_Suite-class-passed -->
           <div class="suite-Smoke_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -293,23 +273,23 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Login')
 data.setCell(0, 2, 'tests.Login')
-data.setCell(0, 3, 4234);
+data.setCell(0, 3, 4474);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'SwagLab_Login')
-data.setCell(1, 2, 'tests.SwagLab_Login')
-data.setCell(1, 3, 3429);
+data.setCell(1, 1, 'Logout')
+data.setCell(1, 2, 'tests.Logout')
+data.setCell(1, 3, 3022);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Title')
-data.setCell(2, 2, 'tests.Title')
-data.setCell(2, 3, 2702);
+data.setCell(2, 1, 'SwagLab_Login')
+data.setCell(2, 2, 'tests.SwagLab_Login')
+data.setCell(2, 3, 2759);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'GoogleSearch')
 data.setCell(3, 2, 'tests.GoogleSearch')
-data.setCell(3, 3, 2658);
+data.setCell(3, 3, 2757);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'Logout')
-data.setCell(4, 2, 'tests.Logout')
-data.setCell(4, 3, 2380);
+data.setCell(4, 1, 'Title')
+data.setCell(4, 2, 'tests.Title')
+data.setCell(4, 3, 2082);
 window.suiteTableData['Smoke_Suite']= { tableData: data, tableDiv: 'times-div-Smoke_Suite'}
 return data;
 }
@@ -349,31 +329,29 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">tests.Logout</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">Logout</span>
-                <span class="method-start">4237 ms</span>
+                <span class="method-start">4479 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.Title</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">Title</span>
-                <span class="method-start">6623 ms</span>
+                <span class="method-start">7504 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.GoogleSearch</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">GoogleSearch</span>
-                <span class="method-start">9327 ms</span>
+                <span class="method-start">9588 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.SwagLab_Login</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">SwagLab_Login</span>
-                <span class="method-start">12030 ms</span>
+                <span class="method-start">12360 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

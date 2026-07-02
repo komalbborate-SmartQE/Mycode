@@ -1,16 +1,22 @@
 package tests;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Test;
-
 public class SwagLab_Login {
 
 	@Test
 	public void SwagLab_Login() {
 		// TODO Auto-generated method stub
-		WebDriver Driver= new ChromeDriver();
+		ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless=new");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
+
+        WebDriver Driver = new ChromeDriver(options);
 		Driver.get("https://www.saucedemo.com");
 		System.out.println(Driver.getTitle());
 		

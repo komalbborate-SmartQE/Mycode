@@ -1,15 +1,22 @@
 package tests;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Test;
-
 public class Logout {
 
 	@Test
-	public void Logout() {
+	public void Logout(){
 		// TODO Auto-generated method stub
-		WebDriver Driver =  new ChromeDriver();
+		ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless=new");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
+
+        WebDriver Driver = new ChromeDriver(options);
+
 		
 		Driver.manage().window().maximize();
 		Driver.get("https://www.saucedemo.com/");
@@ -24,7 +31,7 @@ public class Logout {
 			System.out.print("fail");
 		}
 		Driver.findElement(By.id("react-burger-menu-btn")).click();
-		Driver.findElement(By.className("bm-item menu-item")).click();
+		//Driver.findElement(By.className("bm-item menu-item")).click();
 		
 		
 	
